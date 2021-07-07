@@ -1,0 +1,793 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="sass/main.css">
+    <title>Samira's Recipes</title>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+  </head>
+  <body>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                  <img src="images/logo.png" class="img-fluid" />
+              </a>
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span class="iconify" data-icon="icon-park:hamburger-button" data-inline="false"></span>
+                </div>
+                <div class="closemenu">
+                    <span class="iconify" data-icon="icon-park:close" data-inline="false"></span>
+                </div>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">My Story</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categories
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Cakes n Muffins</a></li>
+                      <li><a class="dropdown-item" href="#">Bakery Style Breads</a></li>
+                      <li><a class="dropdown-item" href="#">Puddings n Desserts</a></li>
+                      <li><a class="dropdown-item" href="#">Fireless Recipe</a></li>
+                      <li><a class="dropdown-item" href="#">Breakfast</a></li>
+                      <li><a class="dropdown-item" href="#">Snacks</a></li>
+                      <li><a class="dropdown-item" href="#">Indian Traditional Sweets</a></li>
+                      <li><a class="dropdown-item" href="#">Shakes n Drinks</a></li>
+                      <li><a class="dropdown-item" href="#">Salads n Soups</a></li>
+                      <li><a class="dropdown-item" href="#">Sauces n Dips</a></li>
+                      <li><a class="dropdown-item" href="#">Tips n Tricks</a></li>
+                      <li><a class="dropdown-item" href="#">Culinary Basics</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item me-lg-3 mb-2 mb-lg-0 text-center">
+                    <a class="nav-link login" href="#">Login</a>
+                  </li>
+                  <li class="nav-item text-center">
+                    <a class="nav-link signup" href="#">Sign Up</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <section class="hero">
+        <div class="slides-container">
+            <div class="hero-slide slide-1">
+                <img src="images/hero-1.jpg" class="invisible img-fluid" />
+                <div class="hero-caption">
+                    <h2>Welcome to</h2>
+                    <h4 class="mb-4">Samira's Recipes</h4>
+                    <a href="#" class="btn btn-primary">Learn more</a>
+                </div>
+            </div>
+            <div class="hero-slide slide-2">
+                <img src="images/hero-2.jpg" class="invisible img-fluid" />
+                <div class="hero-caption">
+                    <h2>Welcome to</h2>
+                    <h4 class="mb-4">Samira's Recipes</h4>
+                    <a href="#" class="btn btn-primary">Learn more</a>
+                </div>
+            </div>
+            <div class="hero-slide slide-3">
+                <img src="images/hero-3.jpg" class="invisible img-fluid" />
+                <div class="hero-caption">
+                    <h2>Welcome to</h2>
+                    <h4 class="mb-4">Samira's Recipes</h4>
+                    <a href="#" class="btn btn-primary">Learn more</a>
+                </div>
+            </div>
+            <div class="hero-slide slide-4">
+                <img src="images/hero-4.jpg" class="invisible img-fluid" />
+                <div class="hero-caption">
+                    <h2>Welcome to</h2>
+                    <h4 class="mb-4">Samira's Recipes</h4>
+                    <a href="#" class="btn btn-primary">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="popular-cats sec-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6 text-start">
+                    <h2 class="sec-heading color-dark mb-0">Popular Recipes</h2>
+                </div>
+                <div class="col-6 text-end">
+                    <a href="#" class="btn btn-primary">View More</a>
+                </div>
+            </div>
+            <div class="row mt-4 mt-md-5">
+                <div class="col">
+                    <div class="card-scroller">
+                        <div>
+                            <div class="sr-card-wrapper">
+                                <a href="#">
+                                    <div class="sr-card inline-top loaded portrait-card">
+                                        <div class="card-content-wrap">
+                                            <div class="card-actions">
+                                                <!-- <button class="watchlist-button-card" data-text="ADD TO WATCHLIST">
+                                                    <svg class="watchlist-icon"><use class="glyph-icon" xlink:href="#watchlist-add"></use></svg>
+                                                </button> -->
+                                                <button class="watchlist-button-card btn">
+                                                    <span class="iconify" data-icon="bi:heart" data-inline="false"></span>
+                                                </button>
+                                            </div>
+                                            <div class="card-image-content">
+                                                <div class="image-card base-card-image">
+                                                    <img alt="The Promise (Hindi Dubbed)" title="The Promise (Hindi Dubbed)" class="original-image " src="../images/card-thumb.jpg">
+                                                </div>
+                                                <div>
+                                                    <div class="card-overlay show-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="card-details ">
+                                                <h3 class="text-overflow sr-card-header">The Promise (Hindi Dubbed)</h3>
+                                                <div class="text-overflow sr-card-subheader">3 Seasons, 258 Episodes</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="sr-card-wrapper">
+                                <a href="#">
+                                    <div class="sr-card inline-top loaded portrait-card">
+                                        <div class="card-content-wrap">
+                                            <div class="card-actions">
+                                                <!-- <button class="watchlist-button-card" data-text="ADD TO WATCHLIST">
+                                                    <svg class="watchlist-icon"><use class="glyph-icon" xlink:href="#watchlist-add"></use></svg>
+                                                </button> -->
+                                                <button class="watchlist-button-card btn">
+                                                    <span class="iconify" data-icon="bi:heart" data-inline="false"></span>
+                                                </button>
+                                            </div>
+                                            <div class="card-image-content">
+                                                <div class="image-card base-card-image">
+                                                    <img alt="The Promise (Hindi Dubbed)" title="The Promise (Hindi Dubbed)" class="original-image " src="../images/card-thumb.jpg">
+                                                </div>
+                                                <div>
+                                                    <div class="card-overlay show-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="card-details ">
+                                                <h3 class="text-overflow sr-card-header">The Promise (Hindi Dubbed)</h3>
+                                                <div class="text-overflow sr-card-subheader">3 Seasons, 258 Episodes</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="sr-card-wrapper">
+                                <a href="#">
+                                    <div class="sr-card inline-top loaded portrait-card">
+                                        <div class="card-content-wrap">
+                                            <div class="card-actions">
+                                                <!-- <button class="watchlist-button-card" data-text="ADD TO WATCHLIST">
+                                                    <svg class="watchlist-icon"><use class="glyph-icon" xlink:href="#watchlist-add"></use></svg>
+                                                </button> -->
+                                                <button class="watchlist-button-card btn">
+                                                    <span class="iconify" data-icon="bi:heart" data-inline="false"></span>
+                                                </button>
+                                            </div>
+                                            <div class="card-image-content">
+                                                <div class="image-card base-card-image">
+                                                    <img alt="The Promise (Hindi Dubbed)" title="The Promise (Hindi Dubbed)" class="original-image " src="../images/card-thumb.jpg">
+                                                </div>
+                                                <div>
+                                                    <div class="card-overlay show-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="card-details ">
+                                                <h3 class="text-overflow sr-card-header">The Promise (Hindi Dubbed)</h3>
+                                                <div class="text-overflow sr-card-subheader">3 Seasons, 258 Episodes</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="sr-card-wrapper">
+                                <a href="#">
+                                    <div class="sr-card inline-top loaded portrait-card">
+                                        <div class="card-content-wrap">
+                                            <div class="card-actions">
+                                                <!-- <button class="watchlist-button-card" data-text="ADD TO WATCHLIST">
+                                                    <svg class="watchlist-icon"><use class="glyph-icon" xlink:href="#watchlist-add"></use></svg>
+                                                </button> -->
+                                                <button class="watchlist-button-card btn">
+                                                    <span class="iconify" data-icon="bi:heart" data-inline="false"></span>
+                                                </button>
+                                            </div>
+                                            <div class="card-image-content">
+                                                <div class="image-card base-card-image">
+                                                    <img alt="The Promise (Hindi Dubbed)" title="The Promise (Hindi Dubbed)" class="original-image " src="../images/card-thumb.jpg">
+                                                </div>
+                                                <div>
+                                                    <div class="card-overlay show-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="card-details ">
+                                                <h3 class="text-overflow sr-card-header">The Promise (Hindi Dubbed)</h3>
+                                                <div class="text-overflow sr-card-subheader">3 Seasons, 258 Episodes</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="sr-card-wrapper">
+                                <a href="#">
+                                    <div class="sr-card inline-top loaded portrait-card">
+                                        <div class="card-content-wrap">
+                                            <div class="card-actions">
+                                                <!-- <button class="watchlist-button-card" data-text="ADD TO WATCHLIST">
+                                                    <svg class="watchlist-icon"><use class="glyph-icon" xlink:href="#watchlist-add"></use></svg>
+                                                </button> -->
+                                                <button class="watchlist-button-card btn">
+                                                    <span class="iconify" data-icon="bi:heart" data-inline="false"></span>
+                                                </button>
+                                            </div>
+                                            <div class="card-image-content">
+                                                <div class="image-card base-card-image">
+                                                    <img alt="The Promise (Hindi Dubbed)" title="The Promise (Hindi Dubbed)" class="original-image " src="../images/card-thumb.jpg">
+                                                </div>
+                                                <div>
+                                                    <div class="card-overlay show-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="card-details ">
+                                                <h3 class="text-overflow sr-card-header">The Promise (Hindi Dubbed)</h3>
+                                                <div class="text-overflow sr-card-subheader">3 Seasons, 258 Episodes</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="sr-card-wrapper">
+                                <a href="#">
+                                    <div class="sr-card inline-top loaded portrait-card">
+                                        <div class="card-content-wrap">
+                                            <div class="card-actions">
+                                                <!-- <button class="watchlist-button-card" data-text="ADD TO WATCHLIST">
+                                                    <svg class="watchlist-icon"><use class="glyph-icon" xlink:href="#watchlist-add"></use></svg>
+                                                </button> -->
+                                                <button class="watchlist-button-card btn">
+                                                    <span class="iconify" data-icon="bi:heart" data-inline="false"></span>
+                                                </button>
+                                            </div>
+                                            <div class="card-image-content">
+                                                <div class="image-card base-card-image">
+                                                    <img alt="The Promise (Hindi Dubbed)" title="The Promise (Hindi Dubbed)" class="original-image " src="../images/card-thumb.jpg">
+                                                </div>
+                                                <div>
+                                                    <div class="card-overlay show-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="card-details ">
+                                                <h3 class="text-overflow sr-card-header">The Promise (Hindi Dubbed)</h3>
+                                                <div class="text-overflow sr-card-subheader">3 Seasons, 258 Episodes</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="sr-card-wrapper">
+                                <a href="#">
+                                    <div class="sr-card inline-top loaded portrait-card">
+                                        <div class="card-content-wrap">
+                                            <div class="card-actions">
+                                                <!-- <button class="watchlist-button-card" data-text="ADD TO WATCHLIST">
+                                                    <svg class="watchlist-icon"><use class="glyph-icon" xlink:href="#watchlist-add"></use></svg>
+                                                </button> -->
+                                                <button class="watchlist-button-card btn">
+                                                    <span class="iconify" data-icon="bi:heart" data-inline="false"></span>
+                                                </button>
+                                            </div>
+                                            <div class="card-image-content">
+                                                <div class="image-card base-card-image">
+                                                    <img alt="The Promise (Hindi Dubbed)" title="The Promise (Hindi Dubbed)" class="original-image " src="../images/card-thumb.jpg">
+                                                </div>
+                                                <div>
+                                                    <div class="card-overlay show-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="card-details ">
+                                                <h3 class="text-overflow sr-card-header">The Promise (Hindi Dubbed)</h3>
+                                                <div class="text-overflow sr-card-subheader">3 Seasons, 258 Episodes</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="sr-card-wrapper">
+                                <a href="#">
+                                    <div class="sr-card inline-top loaded portrait-card">
+                                        <div class="card-content-wrap">
+                                            <div class="card-actions">
+                                                <!-- <button class="watchlist-button-card" data-text="ADD TO WATCHLIST">
+                                                    <svg class="watchlist-icon"><use class="glyph-icon" xlink:href="#watchlist-add"></use></svg>
+                                                </button> -->
+                                                <button class="watchlist-button-card btn">
+                                                    <span class="iconify" data-icon="bi:heart" data-inline="false"></span>
+                                                </button>
+                                            </div>
+                                            <div class="card-image-content">
+                                                <div class="image-card base-card-image">
+                                                    <img alt="The Promise (Hindi Dubbed)" title="The Promise (Hindi Dubbed)" class="original-image " src="../images/card-thumb.jpg">
+                                                </div>
+                                                <div>
+                                                    <div class="card-overlay show-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="card-details ">
+                                                <h3 class="text-overflow sr-card-header">The Promise (Hindi Dubbed)</h3>
+                                                <div class="text-overflow sr-card-subheader">3 Seasons, 258 Episodes</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="sr-card-wrapper">
+                                <a href="#">
+                                    <div class="sr-card inline-top loaded portrait-card">
+                                        <div class="card-content-wrap">
+                                            <div class="card-actions">
+                                                <!-- <button class="watchlist-button-card" data-text="ADD TO WATCHLIST">
+                                                    <svg class="watchlist-icon"><use class="glyph-icon" xlink:href="#watchlist-add"></use></svg>
+                                                </button> -->
+                                                <button class="watchlist-button-card btn">
+                                                    <span class="iconify" data-icon="bi:heart" data-inline="false"></span>
+                                                </button>
+                                            </div>
+                                            <div class="card-image-content">
+                                                <div class="image-card base-card-image">
+                                                    <img alt="The Promise (Hindi Dubbed)" title="The Promise (Hindi Dubbed)" class="original-image " src="../images/card-thumb.jpg">
+                                                </div>
+                                                <div>
+                                                    <div class="card-overlay show-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="card-details ">
+                                                <h3 class="text-overflow sr-card-header">The Promise (Hindi Dubbed)</h3>
+                                                <div class="text-overflow sr-card-subheader">3 Seasons, 258 Episodes</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="sr-card-wrapper">
+                                <a href="#">
+                                    <div class="sr-card inline-top loaded portrait-card">
+                                        <div class="card-content-wrap">
+                                            <div class="card-actions">
+                                                <button class="watchlist-button-card btn">
+                                                    <span class="iconify" data-icon="bi:heart" data-inline="false"></span>
+                                                </button>
+                                            </div>
+                                            <div class="card-image-content">
+                                                <div class="image-card base-card-image">
+                                                    <img alt="The Promise (Hindi Dubbed)" title="The Promise (Hindi Dubbed)" class="img-fluid original-image " src="../images/card-thumb.jpg">
+                                                </div>
+                                                <div>
+                                                    <div class="card-overlay show-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="card-details ">
+                                                <h3 class="text-overflow sr-card-header">The Promise (Hindi Dubbed)</h3>
+                                                <div class="text-overflow sr-card-subheader">3 Seasons, 258 Episodes</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-samira sec-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 pe-5">
+                    <p>As a woman, I like cooking food for my family and me. As an independent woman, I love sharing my recipes with millions of people online and making a connect with them.</p>
+                    <p>Whether you're based out of home or working outdoors, delectable cuisine is that one aspect of life that allows people to let go off their inhibitions and understand each other more.</p>
+                    <p>My food journey began decades ago and along it came learnings, challenges, success, failures, growth and an amazing connect with foodies from all over the world.</p>
+                    <p>My core intent behind this platform is to share my love for food and hospitality and to engage with food enthusiasts from across regions, cultures and countries.</p>
+                    <small><i>- SAMIRA GUPTA, FOOD CONNOISSEUR</i></small>
+                </div>
+                <div class="col-md-6">
+                    <img src="./images/Samira-Gupta.png" class="img-fluid mx-auto d-table" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="featured-cats sec-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6 text-start">
+                    <h2 class="sec-heading color-dark mb-0">Featured Recipes</h2>
+                </div>
+                <div class="col-6 text-end">
+                    <a href="#" class="btn btn-primary">View More</a>
+                </div>
+            </div>
+            <div class="row mt-4 mt-md-5">
+                <div class="col">
+                    <div class="card-scroller">
+                        <div>
+                            <div class="sr-card-wrapper">
+                                <a href="#">
+                                    <div class="sr-card inline-top loaded portrait-card">
+                                        <div class="card-content-wrap">
+                                            <div class="card-actions">
+                                                <!-- <button class="watchlist-button-card" data-text="ADD TO WATCHLIST">
+                                                    <svg class="watchlist-icon"><use class="glyph-icon" xlink:href="#watchlist-add"></use></svg>
+                                                </button> -->
+                                                <button class="watchlist-button-card btn">
+                                                    <span class="iconify" data-icon="bi:heart" data-inline="false"></span>
+                                                </button>
+                                            </div>
+                                            <div class="card-image-content">
+                                                <div class="image-card base-card-image">
+                                                    <img alt="The Promise (Hindi Dubbed)" title="The Promise (Hindi Dubbed)" class="original-image " src="../images/card-thumb.jpg">
+                                                </div>
+                                                <div>
+                                                    <div class="card-overlay show-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="card-details ">
+                                                <h3 class="text-overflow sr-card-header">The Promise (Hindi Dubbed)</h3>
+                                                <div class="text-overflow sr-card-subheader">3 Seasons, 258 Episodes</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="sr-card-wrapper">
+                                <a href="#">
+                                    <div class="sr-card inline-top loaded portrait-card">
+                                        <div class="card-content-wrap">
+                                            <div class="card-actions">
+                                                <!-- <button class="watchlist-button-card" data-text="ADD TO WATCHLIST">
+                                                    <svg class="watchlist-icon"><use class="glyph-icon" xlink:href="#watchlist-add"></use></svg>
+                                                </button> -->
+                                                <button class="watchlist-button-card btn">
+                                                    <span class="iconify" data-icon="bi:heart" data-inline="false"></span>
+                                                </button>
+                                            </div>
+                                            <div class="card-image-content">
+                                                <div class="image-card base-card-image">
+                                                    <img alt="The Promise (Hindi Dubbed)" title="The Promise (Hindi Dubbed)" class="original-image " src="../images/card-thumb.jpg">
+                                                </div>
+                                                <div>
+                                                    <div class="card-overlay show-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="card-details ">
+                                                <h3 class="text-overflow sr-card-header">The Promise (Hindi Dubbed)</h3>
+                                                <div class="text-overflow sr-card-subheader">3 Seasons, 258 Episodes</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="sr-card-wrapper">
+                                <a href="#">
+                                    <div class="sr-card inline-top loaded portrait-card">
+                                        <div class="card-content-wrap">
+                                            <div class="card-actions">
+                                                <!-- <button class="watchlist-button-card" data-text="ADD TO WATCHLIST">
+                                                    <svg class="watchlist-icon"><use class="glyph-icon" xlink:href="#watchlist-add"></use></svg>
+                                                </button> -->
+                                                <button class="watchlist-button-card btn">
+                                                    <span class="iconify" data-icon="bi:heart" data-inline="false"></span>
+                                                </button>
+                                            </div>
+                                            <div class="card-image-content">
+                                                <div class="image-card base-card-image">
+                                                    <img alt="The Promise (Hindi Dubbed)" title="The Promise (Hindi Dubbed)" class="original-image " src="../images/card-thumb.jpg">
+                                                </div>
+                                                <div>
+                                                    <div class="card-overlay show-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="card-details ">
+                                                <h3 class="text-overflow sr-card-header">The Promise (Hindi Dubbed)</h3>
+                                                <div class="text-overflow sr-card-subheader">3 Seasons, 258 Episodes</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="sr-card-wrapper">
+                                <a href="#">
+                                    <div class="sr-card inline-top loaded portrait-card">
+                                        <div class="card-content-wrap">
+                                            <div class="card-actions">
+                                                <!-- <button class="watchlist-button-card" data-text="ADD TO WATCHLIST">
+                                                    <svg class="watchlist-icon"><use class="glyph-icon" xlink:href="#watchlist-add"></use></svg>
+                                                </button> -->
+                                                <button class="watchlist-button-card btn">
+                                                    <span class="iconify" data-icon="bi:heart" data-inline="false"></span>
+                                                </button>
+                                            </div>
+                                            <div class="card-image-content">
+                                                <div class="image-card base-card-image">
+                                                    <img alt="The Promise (Hindi Dubbed)" title="The Promise (Hindi Dubbed)" class="original-image " src="../images/card-thumb.jpg">
+                                                </div>
+                                                <div>
+                                                    <div class="card-overlay show-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="card-details ">
+                                                <h3 class="text-overflow sr-card-header">The Promise (Hindi Dubbed)</h3>
+                                                <div class="text-overflow sr-card-subheader">3 Seasons, 258 Episodes</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="sr-card-wrapper">
+                                <a href="#">
+                                    <div class="sr-card inline-top loaded portrait-card">
+                                        <div class="card-content-wrap">
+                                            <div class="card-actions">
+                                                <!-- <button class="watchlist-button-card" data-text="ADD TO WATCHLIST">
+                                                    <svg class="watchlist-icon"><use class="glyph-icon" xlink:href="#watchlist-add"></use></svg>
+                                                </button> -->
+                                                <button class="watchlist-button-card btn">
+                                                    <span class="iconify" data-icon="bi:heart" data-inline="false"></span>
+                                                </button>
+                                            </div>
+                                            <div class="card-image-content">
+                                                <div class="image-card base-card-image">
+                                                    <img alt="The Promise (Hindi Dubbed)" title="The Promise (Hindi Dubbed)" class="original-image " src="../images/card-thumb.jpg">
+                                                </div>
+                                                <div>
+                                                    <div class="card-overlay show-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="card-details ">
+                                                <h3 class="text-overflow sr-card-header">The Promise (Hindi Dubbed)</h3>
+                                                <div class="text-overflow sr-card-subheader">3 Seasons, 258 Episodes</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="sr-card-wrapper">
+                                <a href="#">
+                                    <div class="sr-card inline-top loaded portrait-card">
+                                        <div class="card-content-wrap">
+                                            <div class="card-actions">
+                                                <!-- <button class="watchlist-button-card" data-text="ADD TO WATCHLIST">
+                                                    <svg class="watchlist-icon"><use class="glyph-icon" xlink:href="#watchlist-add"></use></svg>
+                                                </button> -->
+                                                <button class="watchlist-button-card btn">
+                                                    <span class="iconify" data-icon="bi:heart" data-inline="false"></span>
+                                                </button>
+                                            </div>
+                                            <div class="card-image-content">
+                                                <div class="image-card base-card-image">
+                                                    <img alt="The Promise (Hindi Dubbed)" title="The Promise (Hindi Dubbed)" class="original-image " src="../images/card-thumb.jpg">
+                                                </div>
+                                                <div>
+                                                    <div class="card-overlay show-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="card-details ">
+                                                <h3 class="text-overflow sr-card-header">The Promise (Hindi Dubbed)</h3>
+                                                <div class="text-overflow sr-card-subheader">3 Seasons, 258 Episodes</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="sr-card-wrapper">
+                                <a href="#">
+                                    <div class="sr-card inline-top loaded portrait-card">
+                                        <div class="card-content-wrap">
+                                            <div class="card-actions">
+                                                <!-- <button class="watchlist-button-card" data-text="ADD TO WATCHLIST">
+                                                    <svg class="watchlist-icon"><use class="glyph-icon" xlink:href="#watchlist-add"></use></svg>
+                                                </button> -->
+                                                <button class="watchlist-button-card btn">
+                                                    <span class="iconify" data-icon="bi:heart" data-inline="false"></span>
+                                                </button>
+                                            </div>
+                                            <div class="card-image-content">
+                                                <div class="image-card base-card-image">
+                                                    <img alt="The Promise (Hindi Dubbed)" title="The Promise (Hindi Dubbed)" class="original-image " src="../images/card-thumb.jpg">
+                                                </div>
+                                                <div>
+                                                    <div class="card-overlay show-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="card-details ">
+                                                <h3 class="text-overflow sr-card-header">The Promise (Hindi Dubbed)</h3>
+                                                <div class="text-overflow sr-card-subheader">3 Seasons, 258 Episodes</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="sr-card-wrapper">
+                                <a href="#">
+                                    <div class="sr-card inline-top loaded portrait-card">
+                                        <div class="card-content-wrap">
+                                            <div class="card-actions">
+                                                <!-- <button class="watchlist-button-card" data-text="ADD TO WATCHLIST">
+                                                    <svg class="watchlist-icon"><use class="glyph-icon" xlink:href="#watchlist-add"></use></svg>
+                                                </button> -->
+                                                <button class="watchlist-button-card btn">
+                                                    <span class="iconify" data-icon="bi:heart" data-inline="false"></span>
+                                                </button>
+                                            </div>
+                                            <div class="card-image-content">
+                                                <div class="image-card base-card-image">
+                                                    <img alt="The Promise (Hindi Dubbed)" title="The Promise (Hindi Dubbed)" class="original-image " src="../images/card-thumb.jpg">
+                                                </div>
+                                                <div>
+                                                    <div class="card-overlay show-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="card-details ">
+                                                <h3 class="text-overflow sr-card-header">The Promise (Hindi Dubbed)</h3>
+                                                <div class="text-overflow sr-card-subheader">3 Seasons, 258 Episodes</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="sr-card-wrapper">
+                                <a href="#">
+                                    <div class="sr-card inline-top loaded portrait-card">
+                                        <div class="card-content-wrap">
+                                            <div class="card-actions">
+                                                <!-- <button class="watchlist-button-card" data-text="ADD TO WATCHLIST">
+                                                    <svg class="watchlist-icon"><use class="glyph-icon" xlink:href="#watchlist-add"></use></svg>
+                                                </button> -->
+                                                <button class="watchlist-button-card btn">
+                                                    <span class="iconify" data-icon="bi:heart" data-inline="false"></span>
+                                                </button>
+                                            </div>
+                                            <div class="card-image-content">
+                                                <div class="image-card base-card-image">
+                                                    <img alt="The Promise (Hindi Dubbed)" title="The Promise (Hindi Dubbed)" class="original-image " src="../images/card-thumb.jpg">
+                                                </div>
+                                                <div>
+                                                    <div class="card-overlay show-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="card-details ">
+                                                <h3 class="text-overflow sr-card-header">The Promise (Hindi Dubbed)</h3>
+                                                <div class="text-overflow sr-card-subheader">3 Seasons, 258 Episodes</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="sr-card-wrapper">
+                                <a href="#">
+                                    <div class="sr-card inline-top loaded portrait-card">
+                                        <div class="card-content-wrap">
+                                            <div class="card-actions">
+                                                <button class="watchlist-button-card btn">
+                                                    <span class="iconify" data-icon="bi:heart" data-inline="false"></span>
+                                                </button>
+                                            </div>
+                                            <div class="card-image-content">
+                                                <div class="image-card base-card-image">
+                                                    <img alt="The Promise (Hindi Dubbed)" title="The Promise (Hindi Dubbed)" class="img-fluid original-image " src="../images/card-thumb.jpg">
+                                                </div>
+                                                <div>
+                                                    <div class="card-overlay show-icon"></div>
+                                                </div>
+                                            </div>
+                                            <div class="card-details ">
+                                                <h3 class="text-overflow sr-card-header">The Promise (Hindi Dubbed)</h3>
+                                                <div class="text-overflow sr-card-subheader">3 Seasons, 258 Episodes</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="sec-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <a href="#">
+                        <img src="./images/logo-w.png" class="img-fluid" />
+                    </a>
+                    <p class="body-text color-white mt-4">I’m a Cuisiner, a Culinary Artist, and an Award-Winning Food Blogger. I’m here to share my love for food and my delectable recipes with all the passionate foodies of the world and...</p>
+                    <a href="#" class="color-white font-300  mt-4">Read my story</a>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h6 class="w-title color-white font-500 mb-4">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">My Story</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Signup</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h6 class="w-title color-white font-500 mb-4">Let's Connect</h6>
+                    <ul class="f-social">
+                        <li><a href="#"><span class="iconify" data-icon="bx:bxl-facebook" data-inline="false"></span></a></li>
+                        <li><a href="#"><span class="iconify" data-icon="bx:bxl-pinterest" data-inline="false"></span></a></li>
+                        <li><a href="#"><span class="iconify" data-icon="bx:bxl-youtube" data-inline="false"></span></a></li>
+                        <li><a href="#"><span class="iconify" data-icon="bx:bxl-telegram" data-inline="false"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
